@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.uzbot"><![CDATA[Community Bot]]></item>
+		<item name="wcf.acp.group.option.admin.uzbot.canManageUzbot"><![CDATA[Can manage Community Bot]]></item>
+	</category>
+	
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.uzbot"><![CDATA[Community Bot]]></item>
+		<item name="wcf.acp.menu.link.uzbot.add"><![CDATA[Add Bot]]></item>
+		<item name="wcf.acp.menu.link.uzbot.import.user"><![CDATA[Save and restore Inactivities]]></item>
+		<item name="wcf.acp.menu.link.uzbot.list"><![CDATA[Bots]]></item>
+		<item name="wcf.acp.menu.link.uzbot.category.add"><![CDATA[Add Category]]></item>
+		<item name="wcf.acp.menu.link.uzbot.category.list"><![CDATA[Categories]]></item>
+		<item name="wcf.acp.menu.link.uzbot.log.list"><![CDATA[Log]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.uzbot"><![CDATA[Community Bot]]></item>
+		<item name="wcf.acp.option.category.uzbot.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.uzbot.general.data"><![CDATA[Processing]]></item>
+		<item name="wcf.acp.option.category.uzbot.general.log"><![CDATA[Log]]></item>
+		<item name="wcf.acp.option.module_uzbot"><![CDATA[Community Bot]]></item>
+		<item name="wcf.acp.option.uzbot_data_limit_comment"><![CDATA[Notifications]]></item>
+		<item name="wcf.acp.option.uzbot_data_limit_comment.description"><![CDATA[Number of notifications which are processed during each Bot run (comments, conversations).]]></item>
+		<item name="wcf.acp.option.uzbot_data_limit_user"><![CDATA[Members]]></item>
+		<item name="wcf.acp.option.uzbot_data_limit_user.description"><![CDATA[Number of members who are processed during each Bot run (group assignment, inactivity).]]></item>
+		<item name="wcf.acp.option.uzbot_log_delete"><![CDATA[Deletion]]></item>
+		<item name="wcf.acp.option.uzbot_log_delete.description"><![CDATA[Defines after which period of time old entries are to be deleted.]]></item>
+	</category>
+	
+	<category name="wcf.acp.uzbot">
+		<item name="wcf.acp.uzbot.add"><![CDATA[Add Bot]]></item>
+		<item name="wcf.acp.uzbot.affected"><![CDATA[Selection]]></item>
+		<item name="wcf.acp.uzbot.affected.active"><![CDATA[Acting user]]></item>
+		<item name="wcf.acp.uzbot.affected.standard"><![CDATA[Standard]]></item>
+		<item name="wcf.acp.uzbot.affected.setting"><![CDATA[Affected User]]></item>
+		<item name="wcf.acp.uzbot.affected.setting.description"><![CDATA[<p>“Affected User(s)” can, in many cases, be defined as receiver of a notification. By standard, the affected user is a user being passively affected by an action, e.g. group assignment.</p>
+<br><p>Some Bots, however, monitor the acting users, too. One example is the reporting Bot. To be able to also address the reporting user (= acting user) he can be defined as “Affected User(s)”. Using 2 Bots, it is possible to send notifications to the reporting and the reported user on the same report.</p>]]></item>
+		
+		<item name="wcf.acp.uzbot.article.articlePublished"><![CDATA[Only monitor published articles]]></item>
+		<item name="wcf.acp.uzbot.birthday.birthdayForce"><![CDATA[Force Birthdays]]></item>
+		<item name="wcf.acp.uzbot.choose"><![CDATA[Choose Bot]]></item>
+		<item name="wcf.acp.uzbot.circular.counter"><![CDATA[Counter]]></item>
+		<item name="wcf.acp.uzbot.circular.counter.description"><![CDATA[Insert the start value and the intervall. Both values may be negative.]]></item>
+		<item name="wcf.acp.uzbot.circular.dayOfMonth"><![CDATA[Day of Month]]></item>
+		<item name="wcf.acp.uzbot.circular.first"><![CDATA[first]]></item>
+		<item name="wcf.acp.uzbot.circular.fourth"><![CDATA[fourth]]></item>
+		<item name="wcf.acp.uzbot.circular.last"><![CDATA[last]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatCount"><![CDATA[Number of Repetitions]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType"><![CDATA[Repetition]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.daily"><![CDATA[daily]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.halfyearly"><![CDATA[half-yearly (begin)]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.hourly"><![CDATA[hourly]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.halfDaily"><![CDATA[half daily]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.monthlyDoM"><![CDATA[monthly - day of month]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.monthlyDoW"><![CDATA[monthly - day of week]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.quarterly"><![CDATA[quarterly (begin)]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.weekly"><![CDATA[weekly]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.yearlyDoM"><![CDATA[yearly - day of month]]></item>
+		<item name="wcf.acp.uzbot.circular.repeatType.yearlyDoW"><![CDATA[yearly - day of week]]></item>
+		<item name="wcf.acp.uzbot.circular.second"><![CDATA[second]]></item>
+		<item name="wcf.acp.uzbot.circular.start"><![CDATA[Execution]]></item>
+		<item name="wcf.acp.uzbot.circular.start.error.inPast"><![CDATA[The time is in the past.]]></item>
+		<item name="wcf.acp.uzbot.circular.start.error.invalid"><![CDATA[The time is invalid.]]></item>
+		<item name="wcf.acp.uzbot.circular.third"><![CDATA[third]]></item>
+		<item name="wcf.acp.uzbot.circular.timezone"><![CDATA[Timezone]]></item>
+		<item name="wcf.acp.uzbot.circular.weekday"><![CDATA[Day of Week]]></item>
+		
+		<item name="wcf.acp.uzbot.comment.answers"><![CDATA[Answers]]></item>
+		<item name="wcf.acp.uzbot.comment.answers.no"><![CDATA[Only comments without answers]]></item>
+		<item name="wcf.acp.uzbot.comment.days"><![CDATA[Age [days]]]></item>
+		<item name="wcf.acp.uzbot.comment.days.creation"><![CDATA[since creation]]></item>
+		<item name="wcf.acp.uzbot.comment.days.reply"><![CDATA[since last reply]]></item>
+		<item name="wcf.acp.uzbot.comment.setting"><![CDATA[Comments to be deleted]]></item>
+		<item name="wcf.acp.uzbot.comment.types"><![CDATA[Type of Comment]]></item>
+		<item name="wcf.acp.uzbot.comment.types.application"><![CDATA[Group application]]></item>
+		<item name="wcf.acp.uzbot.comment.types.error.notConfigured"><![CDATA[At least on comment type must be selected.]]></item>
+		<item name="wcf.acp.uzbot.comment.types.moderation"><![CDATA[Moderation panel]]></item>
+		<item name="wcf.acp.uzbot.comment.types.page"><![CDATA[CMS Pages]]></item>
+		<item name="wcf.acp.uzbot.comment.user"><![CDATA[User]]></item>
+		<item name="wcf.acp.uzbot.comment.user.no"><![CDATA[Only comments without user]]></item>
+		<item name="wcf.acp.uzbot.comment.user.no.description"><![CDATA[Only comments will be deleted which don’t have a user anymore. Any user conditions below will be disregarded.]]></item>
+		
+		<item name="wcf.acp.uzbot.condense.enable"><![CDATA[activate]]></item>
+		<item name="wcf.acp.uzbot.condense.setting"><![CDATA[Condense Results]]></item>
+		<item name="wcf.acp.uzbot.condense.setting.description"><![CDATA[<p>Usually one notification is created for each action. If, for example, 15 users are affected by an action “User - Group Assignment”, 15 notification will be send to individually notify each user.</p>
+<p>Using “Condense Results” you can summarize all action results in a single notification. For that, you have to enter a combination of placeholder and text into the text field “Summary” below, in which each result is stored. The result will then be entered into the notification’s text as a list or comma-separated text.</p>
+<p>Use either the placeholder <strong>[condense-list]</strong> or <strong>[condense-comma]</strong> to achieve that. One example for an action “User - Group Assignment”:</p>
+<br><p><strong>[user-name] ([user-age]) was added to the group "[usergroup]"</strong> and the placeholder [condense-comma] will result in:</p>
+<p>admin (35) was added to the group "Testgruppe", testuser (46) was added to the group "Testgruppe", Beipielnutzer (22) was added to the group "Testgruppe"</p>
+<br><p>Notice: The placeholder [condense-list] may only be used once and must not be in a line with other text in die editor window for a correct display within the notification. Please make sure it gets an own line. Beiing in its own line, it may be formatted individually by editor means.</p>]]></item>
+		
+		
+		<item name="wcf.acp.uzbot.condense.text"><![CDATA[Placeholder text]]></item>
+		
+		<item name="wcf.acp.uzbot.condition.activityDateInterval"><![CDATA[Days since last activity]]></item>
+		<item name="wcf.acp.uzbot.condition.bannedDateInterval"><![CDATA[Days since last time banned]]></item>
+		<item name="wcf.acp.uzbot.condition.disabledDateInterval"><![CDATA[Days since last time disabled]]></item>
+		<item name="wcf.acp.uzbot.condition.reminderDateInterval"><![CDATA[Days since last reminder]]></item>
+		<item name="wcf.acp.uzbot.condition.state.description"><![CDATA[only users will be considered, whose state was changed by the bot.]]></item>
+		<item name="wcf.acp.uzbot.condition.user"><![CDATA[General User Conditions]]></item>
+		<item name="wcf.acp.uzbot.condition.user.description"><![CDATA[<p>In addition to the Bot-specific conditions, you may add further general conditions as found at many places in WoltLab Community Suite.</p>
+<br><p>Users, who should be affected by the action, must fulfil these and eventually already configured Bot-specific conditions. If no conditions are specified, all users will be affected by the action.</p>]]></item>
+		<item name="wcf.acp.uzbot.condition.userBot"><![CDATA[Bot-specific user conditions]]></item>
+		<item name="wcf.acp.uzbot.condition.userBot.description"><![CDATA[<p>Community Bot remembers which user actions already were executed. These actions, like reminding, disabling or bans, may serve as condition for other Bot actions.</p>
+<br><p>Configure Bot-specific conditions the select certain users for an action. If no conditions are specified, all users will be affected by the action.</p>]]></item>
+		
+		<item name="wcf.acp.uzbot.conversation.answers"><![CDATA[Answers]]></item>
+		<item name="wcf.acp.uzbot.conversation.answers.no"><![CDATA[Only conversations without answers]]></item>
+		<item name="wcf.acp.uzbot.conversation.days"><![CDATA[Age [days]]]></item>
+		<item name="wcf.acp.uzbot.conversation.days.creation"><![CDATA[since creation]]></item>
+		<item name="wcf.acp.uzbot.conversation.labels"><![CDATA[Label]]></item>
+		<item name="wcf.acp.uzbot.conversation.labels.no"><![CDATA[Only conversations without label]]></item>
+		<item name="wcf.acp.uzbot.conversation.days.reply"><![CDATA[since last reply]]></item>
+		<item name="wcf.acp.uzbot.conversation.setting"><![CDATA[Conversations to be deleted]]></item>
+		
+		<item name="wcf.acp.uzbot.copy"><![CDATA[Copy Bot]]></item>
+		<item name="wcf.acp.uzbot.copy.confirm"><![CDATA[Do you really want to copy the Bot?]]></item>
+		<item name="wcf.acp.uzbot.delete.sure"><![CDATA[Do you really want to delete the Bot?]]></item>
+		<item name="wcf.acp.uzbot.edit"><![CDATA[Edit Bot]]></item>
+		
+		<item name="wcf.acp.uzbot.error.disabled"><![CDATA[Bot was diabled]]></item>
+		<item name="wcf.acp.uzbot.error.feedIllegal"><![CDATA[Feed not RSS- resp. Atom-compliant]]></item>
+		<item name="wcf.acp.uzbot.error.feedIllegal.rss"><![CDATA[Feed has no title and/or no description]]></item>
+		<item name="wcf.acp.uzbot.error.feedIllegal.atom"><![CDATA[Feed has no ID and/or no description]]></item>
+		<item name="wcf.acp.uzbot.error.feedItemIllegal.rss"><![CDATA[Feed item has no title and/or no description]]></item>
+		<item name="wcf.acp.uzbot.error.feedItemIllegal.atom"><![CDATA[Feed item has no ID, no link and/or no title]]></item>
+		<item name="wcf.acp.uzbot.error.feedType"><![CDATA[Feed type unknown]]></item>
+		<item name="wcf.acp.uzbot.error.feedUrl"><![CDATA[Feed could not be read]]></item>
+		<item name="wcf.acp.uzbot.error.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.error.noNotification"><![CDATA[No notification]]></item>
+		<item name="wcf.acp.uzbot.error.noReceiver"><![CDATA[No receivers]]></item>
+		<item name="wcf.acp.uzbot.error.noSender"><![CDATA[No valid sender]]></item>
+		
+		<item name="wcf.acp.uzbot.export.user"><![CDATA[Save Inactivities]]></item>
+		<item name="wcf.acp.uzbot.export.user.download"><![CDATA[Download Options]]></item>
+		<item name="wcf.acp.uzbot.export.user.download.description"><![CDATA[Downloads a backup of the inactivities to your local machine.]]></item>
+		<item name="wcf.acp.uzbot.export.user.none"><![CDATA[No inactivities found.]]></item>
+		
+		<item name="wcf.acp.uzbot.feedreader.exclude"><![CDATA[Negative Filter]]></item>
+		<item name="wcf.acp.uzbot.feedreader.exclude.description"><![CDATA[Only entries are imported, which don’t contain any of the entered search words. Separate multiple search words with a comma.]]></item>
+		<item name="wcf.acp.uzbot.feedreader.frequency"><![CDATA[Import Frequency]]></item>
+		<item name="wcf.acp.uzbot.feedreader.include"><![CDATA[Positive Filter]]></item>
+		<item name="wcf.acp.uzbot.feedreader.include.description"><![CDATA[Only entries are imported, which contain at least one of the entered search words. Separate multiple search words with a comma.]]></item>
+		<item name="wcf.acp.uzbot.feedreader.maxAge"><![CDATA[Maximum Age]]></item>
+		<item name="wcf.acp.uzbot.feedreader.maxAge.description"><![CDATA[Only entries are imported, which are not older than the entered number of days. Enter “0” to import all entries.]]></item>
+		<item name="wcf.acp.uzbot.feedreader.maxItems"><![CDATA[Number of Entries]]></item>
+		<item name="wcf.acp.uzbot.feedreader.maxItems.description"><![CDATA[Only the entered number of entries is imported. Enter “0” to import all entries.]]></item>
+		<item name="wcf.acp.uzbot.feedreader.reset"><![CDATA[Reset Feedreader]]></item>
+		<item name="wcf.acp.uzbot.feedreader.reset.button"><![CDATA[Reset]]></item>
+		<item name="wcf.acp.uzbot.feedreader.reset.confirm"><![CDATA[Do you really want to reset the feedreader?]]></item>
+		<item name="wcf.acp.uzbot.feedreader.url"><![CDATA[Feed URL]]></item>
+		<item name="wcf.acp.uzbot.feedreader.url.error.invalid"><![CDATA[The entered URL is invalid.]]></item>
+		
+		<item name="wcf.acp.uzbot.feedreader.useTime"><![CDATA[Publication Time]]></item>
+		<item name="wcf.acp.uzbot.feedreader.useTime.enable"><![CDATA[Use time of feed item]]></item>
+		<item name="wcf.acp.uzbot.feedreader.useTags"><![CDATA[Tags]]></item>
+		<item name="wcf.acp.uzbot.feedreader.useTags.enable"><![CDATA[Use categories of feed item as tags]]></item>
+		
+		<item name="wcf.acp.uzbot.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.uzbot.general.description"><![CDATA[General settings of the Bot.]]></item>
+		<item name="wcf.acp.uzbot.general.botDescription"><![CDATA[Description]]></item>
+		<item name="wcf.acp.uzbot.general.botDescription.description"><![CDATA[Optional description of the Bot. A maximum of 255 characters is allowed.]]></item>
+		<item name="wcf.acp.uzbot.general.botDescription.error.tooLong"><![CDATA[The description is too long.]]></item>
+		<item name="wcf.acp.uzbot.general.botTitle"><![CDATA[Title]]></item>
+		<item name="wcf.acp.uzbot.general.botTitle.description"><![CDATA[Short title for display in the ACP. A maximum of 80 characters is allowed.]]></item>
+		<item name="wcf.acp.uzbot.general.botTitle.error.required"><![CDATA[Please fill in this field.]]></item>
+		<item name="wcf.acp.uzbot.general.botTitle.error.tooLong"><![CDATA[The title is too long.]]></item>
+		<item name="wcf.acp.uzbot.general.categoryID"><![CDATA[Category]]></item>
+		<item name="wcf.acp.uzbot.general.categoryID.description"><![CDATA[Category to which the Bot is assigned to.]]></item>
+		<item name="wcf.acp.uzbot.general.categoryID.error.missing"><![CDATA[No category found. Please add a category first.]]></item>
+		<item name="wcf.acp.uzbot.general.categoryID.error.notValid"><![CDATA[Invalid category.]]></item>
+		<item name="wcf.acp.uzbot.general.categoryID.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.general.enableLog"><![CDATA[Enable Log]]></item>
+		<item name="wcf.acp.uzbot.general.error.noDeleteAllowed"><![CDATA[The bot cannot be deleted because it is needed for notifications. However, it can be deleted after deactivation.]]></item>
+		<item name="wcf.acp.uzbot.general.isDisabled"><![CDATA[Disable Bot]]></item>
+		<item name="wcf.acp.uzbot.general.testMode"><![CDATA[Activate test mode]]></item>
+		<item name="wcf.acp.uzbot.general.testMode.description"><![CDATA[During test mode, Bot actions are not executed. It is tested how many users / object will be affected by the Bot action. The results, to include notifications (limited to one affected user), are shown in the Bot log.]]></item>
+		<item name="wcf.acp.uzbot.general.testMode.error.misconfigured"><![CDATA[In test mode, Bot and logging must be activated.]]></item>
+		
+		<item name="wcf.acp.uzbot.groupAssignment.action"><![CDATA[Action]]></item>
+		<item name="wcf.acp.uzbot.groupAssignment.action.add"><![CDATA[add to group]]></item>
+		<item name="wcf.acp.uzbot.groupAssignment.action.remove"><![CDATA[remove from group]]></item>
+		<item name="wcf.acp.uzbot.groupAssignment.groupID"><![CDATA[Group for Action]]></item>
+		<item name="wcf.acp.uzbot.groupAssignment.groupID.error.invalidSelection"><![CDATA[Invalid selection]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeGroupIDs"><![CDATA[Monitored Groups]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeGroupIDs.allGroups"><![CDATA[All Groups]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeGroupIDs.error.notConfigured"><![CDATA[You have to select at least one group.]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeGroupIDs.error.invalidGroup"><![CDATA[An invalid group was selected.]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeType"><![CDATA[Monitored Change]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeType.add"><![CDATA[Addition]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeType.both"><![CDATA[Addition and Removal]]></item>
+		<item name="wcf.acp.uzbot.groupChange.groupChangeType.remove"><![CDATA[Removal]]></item>
+		
+		<item name="wcf.acp.uzbot.import.export.user"><![CDATA[Save and Restore Inactivities]]></item>
+		<item name="wcf.acp.uzbot.import.user"><![CDATA[Restore Inactivities]]></item>
+		<item name="wcf.acp.uzbot.import.user.error.importFailed"><![CDATA[Unable to restore inactivities.]]></item>
+		<item name="wcf.acp.uzbot.import.user.error.uploadFailed"><![CDATA[An unknown error occurred during upload.]]></item>
+		<item name="wcf.acp.uzbot.import.user.success"><![CDATA[Inactivities have been restored.]]></item>
+		<item name="wcf.acp.uzbot.import.user.upload"><![CDATA[Upload Inactivities]]></item>
+		<item name="wcf.acp.uzbot.import.user.upload.description"><![CDATA[Uploads previously downloaded inactivities file.]]></item>
+		
+		<item name="wcf.acp.uzbot.inactive.action"><![CDATA[Action]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.activate"><![CDATA[enable]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.ban"><![CDATA[ban]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.deactivate"><![CDATA[disable]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.delete"><![CDATA[delete]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.remind"><![CDATA[remind]]></item>
+		<item name="wcf.acp.uzbot.inactive.action.unremind"><![CDATA[reset reminders]]></item>
+		<item name="wcf.acp.uzbot.inactive.banReason"><![CDATA[Ban Reason]]></item>
+		<item name="wcf.acp.uzbot.inactive.reminderLimit"><![CDATA[Reminders]]></item>
+		<item name="wcf.acp.uzbot.inactive.reminderLimit.description"><![CDATA[Maximum number of reminders a user may get.]]></item>
+		
+		<item name="wcf.acp.uzbot.label.action"><![CDATA[Label Settings]]></item>
+		<item name="wcf.acp.uzbot.label.condition"><![CDATA[Label Condition]]></item>
+		<item name="wcf.acp.uzbot.label.delete"><![CDATA[Deletion]]></item>
+		<item name="wcf.acp.uzbot.label.delete.yes"><![CDATA[Delete labels]]></item>
+		<item name="wcf.acp.uzbot.label.error.noLabels"><![CDATA[No labels were found.]]></item>
+		<item name="wcf.acp.uzbot.label.set"><![CDATA[Set Labels]]></item>
+		
+		<item name="wcf.acp.uzbot.log.additionalData"><![CDATA[Info]]></item>
+		<item name="wcf.acp.uzbot.log.bot.created"><![CDATA[Bot created by {$username}]]></item>
+		<item name="wcf.acp.uzbot.log.bot.edited"><![CDATA[Bot edited by {$username}]]></item>
+		<item name="wcf.acp.uzbot.log.botTitle"><![CDATA[Bot]]></item>
+		<item name="wcf.acp.uzbot.log.clear"><![CDATA[Clear log]]></item>
+		<item name="wcf.acp.uzbot.log.clear.confirm"><![CDATA[Do you really want to clear the log?]]></item>
+		<item name="wcf.acp.uzbot.log.comment"><![CDATA[{@$comments} conversation{if $comments != 1}s{/if}, {@$users} user{if $users != 1}s{/if}: {$userIDs}]]></item>
+		<item name="wcf.acp.uzbot.log.conversation"><![CDATA[{@$conversations} conversation{if $conversations != 1}s{/if}, {@$users} user{if $users != 1}s{/if}: {$userIDs}]]></item>
+		<item name="wcf.acp.uzbot.log.email.error"><![CDATA[Error while creating an email: ]]></item>
+		<item name="wcf.acp.uzbot.log.email.result"><![CDATA[@$total} email(s) created. {@$users} users: {$userIDs} {if $more}and more{/if}.]]></item>
+		<item name="wcf.acp.uzbot.log.count"><![CDATA[Counter]]></item>
+		<item name="wcf.acp.uzbot.log.error"><![CDATA[Error]]></item>
+		<item name="wcf.acp.uzbot.log.error.disabled"><![CDATA[Bot was disabled.]]></item>
+		<item name="wcf.acp.uzbot.log.error.groupAssignmentGroupID"><![CDATA[User group for group assignment is invalid.]]></item>
+		<item name="wcf.acp.uzbot.log.error.userCreationGroupID"><![CDATA[User group for group assignment is invalid.]]></item>
+		<item name="wcf.acp.uzbot.log.feed"><![CDATA[{@$count} item{if $count != 1}s{/if} read]]></item>
+		<item name="wcf.acp.uzbot.log.languageMismatch"><![CDATA[General language error]]></item>
+		<item name="wcf.acp.uzbot.log.list"><![CDATA[Log of Bots]]></item>
+		<item name="wcf.acp.uzbot.log.manyUsers"><![CDATA[Very many users (@$users})]]></item>
+		<item name="wcf.acp.uzbot.log.notify.count"><![CDATA[{@$count} notification{if $count != 1}s{/if}]]></item>
+		<item name="wcf.acp.uzbot.log.notify.count.id"><![CDATA[{@$count} user{if $count != 1}s{/if} notified: {$id}]]></item>
+		<item name="wcf.acp.uzbot.log.notify.error"><![CDATA[Error with notification:]]></item>
+		<item name="wcf.acp.uzbot.log.notify.error.invisible"><![CDATA[Error with invisible participants]]></item>
+		<item name="wcf.acp.uzbot.log.notifyDes"><![CDATA[Notif.]]></item>
+		<item name="wcf.acp.uzbot.log.noUsers"><![CDATA[No users found]]></item>
+		<item name="wcf.acp.uzbot.log.ok"><![CDATA[Ok]]></item>
+		<item name="wcf.acp.uzbot.log.status"><![CDATA[Status]]></item>
+		<item name="wcf.acp.uzbot.log.test"><![CDATA[Objects affected: {@$objects} | Users affected: {@$users} | Users: {$userIDs}]]></item>
+		<item name="wcf.acp.uzbot.log.testMode"><![CDATA[Test]]></item>
+		<item name="wcf.acp.uzbot.log.time"><![CDATA[Executed]]></item>
+		<item name="wcf.acp.uzbot.log.typeDes"><![CDATA[Action]]></item>
+		<item name="wcf.acp.uzbot.log.user.affected"><![CDATA[{@$total} user{if $total != 1}s{/if} affected: {$userIDs}]]></item>
+		<item name="wcf.acp.uzbot.log.user.email"><![CDATA[User {$userID} does not accept emails]]></item>
+		<item name="wcf.acp.uzbot.log.warning"><![CDATA[Warning]]></item>
+		
+		<item name="wcf.acp.uzbot.list"><![CDATA[Bots]]></item>
+		<item name="wcf.acp.uzbot.list.active"><![CDATA[Active]]></item>
+		<item name="wcf.acp.uzbot.list.botTitle"><![CDATA[Title]]></item>
+		<item name="wcf.acp.uzbot.list.categoryID"><![CDATA[Category]]></item>
+		<item name="wcf.acp.uzbot.list.categoryID.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.list.log"><![CDATA[Log]]></item>
+		<item name="wcf.acp.uzbot.list.notifyDes"><![CDATA[Notification]]></item>
+		<item name="wcf.acp.uzbot.list.sendername"><![CDATA[Author]]></item>
+		<item name="wcf.acp.uzbot.list.testMode"><![CDATA[Test]]></item>
+		<item name="wcf.acp.uzbot.list.typeDes"><![CDATA[Function]]></item>
+		
+		<item name="wcf.acp.uzbot.help"><![CDATA[Community Bot Help]]></item>
+		<item name="wcf.acp.uzbot.no"><![CDATA[no]]></item>
+		<item name="wcf.acp.uzbot.notify"><![CDATA[Notification]]></item>
+		<item name="wcf.acp.uzbot.notify.description"><![CDATA[Notification settings.]]></item>
+		<item name="wcf.acp.uzbot.notify.article"><![CDATA[Article]]></item>
+		<item name="wcf.acp.uzbot.notify.article.inactive"><![CDATA[Articles are disabled by the module configuration.]]></item>
+		<item name="wcf.acp.uzbot.notify.comment"><![CDATA[Comment]]></item>
+		<item name="wcf.acp.uzbot.notify.comment.activity"><![CDATA[Allow activity event]]></item>
+		<item name="wcf.acp.uzbot.notify.comment.inactive"><![CDATA[Comments are disabled by the module configuration.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation"><![CDATA[Conversation]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.allowAdd"><![CDATA[Participants can add new participants]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.close"><![CDATA[Close]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.inactive"><![CDATA[Conversations are disabled by the module configuration.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.invisible"><![CDATA[Invisible Participants]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.invisible.description"><![CDATA[Comma-separated list of usernames.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.invisible.error.sender"><![CDATA[The author / sender may not be invisible participant.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.leave"><![CDATA[Leave]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.leave.description"><![CDATA[“Leave” removes the author from the conversation, but the conversation is still visible in the folder Conversations. “Leave completely” additionally removes the conversation from the folder.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.leave.full"><![CDATA[Leave completely]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.leave.no"><![CDATA[Don’t leave]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.type"><![CDATA[Type]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.type.description"><![CDATA[“Individual conversation” will create an own conversation for each receiver. When using “Group conversation” all receivers will be summerized in one single conversation. Attention: Only a maximum of 91 visible participants per conversation is possible.]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.type.group"><![CDATA[Group conversation]]></item>
+		<item name="wcf.acp.uzbot.notify.conversation.type.individual"><![CDATA[Individual conversation]]></item>
+		<item name="wcf.acp.uzbot.notify.email"><![CDATA[Email]]></item>
+		<item name="wcf.acp.uzbot.notify.email.bcc"><![CDATA[BCC Receiver]]></item>
+		<item name="wcf.acp.uzbot.notify.email.bcc.description"><![CDATA[Comma-separated list of email address for a visible copy.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.bcc.error.notValid"><![CDATA[You inserted an invalid email address.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.cc"><![CDATA[CC Receiver]]></item>
+		<item name="wcf.acp.uzbot.notify.email.cc.description"><![CDATA[Comma-separated list of email address for an invisible copy.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.cc.error.notValid"><![CDATA[You inserted an invalid email address.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.file"><![CDATA[Attachment]]></item>
+		<item name="wcf.acp.uzbot.notify.email.file.description"><![CDATA[Complete server file path to attachment. Leave empty to not send an attachment.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.file.error.notValid"><![CDATA[The attachment either does not exist or is not readable.]]></item>
+		<item name="wcf.acp.uzbot.notify.email.emailPrivacy"><![CDATA[User Setting]]></item>
+		<item name="wcf.acp.uzbot.notify.email.emailPrivacy.enable"><![CDATA[Observe]]></item>
+		<item name="wcf.acp.uzbot.notify.label"><![CDATA[Label]]></item>
+		<item name="wcf.acp.uzbot.notify.language.all"><![CDATA[All languages]]></item>
+		<item name="wcf.acp.uzbot.notify.language.auto"><![CDATA[Automatically]]></item>
+		<item name="wcf.acp.uzbot.notify.languageID"><![CDATA[Language]]></item>
+		<item name="wcf.acp.uzbot.notify.languageID.description"><![CDATA[</>Please choose how Community Bot should handle the language for this notification.</p>
+<br><p><strong>“Automatic”</strong> will automatically adjust the language to match the receiver(s) of the notification resp. adjusts it to the default language when dealing with entries like post, thread or Blog.</p>
+<br><p><strong>“All Languages”</strong> will send notifications in all available languages at the same time. Articles will be created multilingual.</p>
+<br><p>Selecting a <strong>specific language</strong> will result in one notification in exactly this language. However, in multilingual communities you have to enter the texts in all available languages.</p>]]></item>
+		<item name="wcf.acp.uzbot.notify.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.notify.notification"><![CDATA[System Notification]]></item>
+		<item name="wcf.acp.uzbot.notify.notifyID"><![CDATA[Selection]]></item>
+		<item name="wcf.acp.uzbot.notify.notifyID.error.affected"><![CDATA[Affected users cannot be notified with this bot by this notification.]]></item>
+		<item name="wcf.acp.uzbot.notify.notifyID.error.missing"><![CDATA[Please select a notification.]]></item>
+		<item name="wcf.acp.uzbot.notify.notifyID.error.groupOrNotify"><![CDATA[If no group assignment is selected you have to configure a notification.]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver"><![CDATA[Receiver]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.description"><![CDATA[<p>There are 3 different kinds of receivers, which may freely be combined most of the time and from which at least one has to be selected.<p>
+<br><p>Choosing <strong>“Affected User(s)”</strong> will send notifications only to users, who are directly affected by an action. This is the correct configuration in most cases.<p>
+<p><strong>“Single Receiver(s)”</strong> may be used to address certain users. Insert their username separated by comma.</p>
+<p>Selecting <strong>“Receiver Group(s)”</strong> allows you to send notification to all users of one or more user groups.</p>
+<br><p>For emails, additional CC- and BCC-addresses may be inserted.</p>
+<br><p>If desired, you may filter receivers by their status and/or language. Thereby it can be, for example, avoided to notify banned users.</p]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.affected"><![CDATA[Affected User(s)]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.affected.use"><![CDATA[use as receiver]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.condition"><![CDATA[Filter]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.condition.description"><![CDATA[Only users, who fulfill the following conditions, will receive a notification.]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.groupIDs"><![CDATA[Receiver Group(s)]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.groupIDs.error.invalidGroup"><![CDATA[At least one invalid receiver group was selected.]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.groupIDs.error.notConfigured"><![CDATA[At least one receiver must be configured.]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.names"><![CDATA[Single Receiver(s)]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.names.description"><![CDATA[Comma-separated list of usernames.]]></item>
+		<item name="wcf.acp.uzbot.notify.receiver.names.error.invalid"><![CDATA[The username {$name} could not be found.]]></item>
+		<item name="wcf.acp.uzbot.notify.sendername"><![CDATA[Author / Sender]]></item>
+		<item name="wcf.acp.uzbot.notify.sendername.description"><![CDATA[Username of the author / sender of the notification. Note: On emails, only the username of the sender is used; the used email address equals the sender address as configured in the ACP.]]></item>
+		<item name="wcf.acp.uzbot.notify.sendername.error.notFound"><![CDATA[The username does not exist.]]></item>
+		<item name="wcf.acp.uzbot.notify.type.article"><![CDATA[Article]]></item>
+		<item name="wcf.acp.uzbot.notify.type.comment"><![CDATA[Comment]]></item>
+		<item name="wcf.acp.uzbot.notify.type.conversation"><![CDATA[Conversation]]></item>
+		<item name="wcf.acp.uzbot.notify.type.email"><![CDATA[Email]]></item>
+		<item name="wcf.acp.uzbot.notify.type.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.notify.type.notification"><![CDATA[System Notification]]></item>
+		<item name="wcf.acp.uzbot.notify.text"><![CDATA[Text]]></item>
+		<item name="wcf.acp.uzbot.notify.text.condense"><![CDATA[Summary]]></item>
+		<item name="wcf.acp.uzbot.notify.text.content"><![CDATA[Content]]></item>
+		<item name="wcf.acp.uzbot.notify.text.subject"><![CDATA[Subject / Title]]></item>
+		<item name="wcf.acp.uzbot.notify.text.teaser"><![CDATA[Teaser]]></item>
+		
+		<item name="wcf.acp.uzbot.option"><![CDATA[{$key}: {$value}]]></item>
+		<item name="wcf.acp.uzbot.option.none"><![CDATA[none]]></item>
+		<item name="wcf.acp.uzbot.option.separator"><![CDATA[ | ]]></item>
+		
+		<item name="wcf.acp.uzbot.period.day"><![CDATA[Every 24 hours]]></item>
+		<item name="wcf.acp.uzbot.period.dayhalf"><![CDATA[Every 12 hours]]></item>
+		<item name="wcf.acp.uzbot.period.daytwo"><![CDATA[Every 2 days]]></item>
+		<item name="wcf.acp.uzbot.period.hour"><![CDATA[Every 60 minutes]]></item>
+		<item name="wcf.acp.uzbot.period.hourhalf"><![CDATA[Every 30 minutes]]></item>
+		<item name="wcf.acp.uzbot.period.hourquarter"><![CDATA[Every 15 minutes]]></item>
+		<item name="wcf.acp.uzbot.period.hoursix"><![CDATA[Every 6 hours]]></item>
+		<item name="wcf.acp.uzbot.period.hourthree"><![CDATA[Every 3 hours]]></item>
+		<item name="wcf.acp.uzbot.period.hourtwo"><![CDATA[Every 2 hours]]></item>
+		<item name="wcf.acp.uzbot.period.month"><![CDATA[Every month]]></item>
+		<item name="wcf.acp.uzbot.period.once"><![CDATA[Once]]></item>
+		<item name="wcf.acp.uzbot.period.week"><![CDATA[Every week]]></item>
+		
+		<item name="wcf.acp.uzbot.setting"><![CDATA[Settings]]></item>
+		
+		<item name="wcf.acp.uzbot.settings"><![CDATA[Settings]]></item>
+		<item name="wcf.acp.uzbot.type"><![CDATA[Action]]></item>
+		<item name="wcf.acp.uzbot.type.description"><![CDATA[Actions, which the Bot is to execute.]]></item>
+		<item name="wcf.acp.uzbot.type.description.notifyOnly"><![CDATA[Only the notification must be configured.]]></item>
+		<item name="wcf.acp.uzbot.type.description.notifyOnly.userCondition"><![CDATA[Only the notification must be configured. You can, however, monitor only certain users by configuring “General User Conditions”.]]></item>
+		
+		<item name="wcf.acp.uzbot.type.article_new"><![CDATA[Article - New Article]]></item>
+		<item name="wcf.acp.uzbot.type.article_change"><![CDATA[Article - Change]]></item>
+		<item name="wcf.acp.uzbot.type.system_circular"><![CDATA[System - Circular	]]></item>
+		<item name="wcf.acp.uzbot.type.system_comment"><![CDATA[System - Comments]]></item>
+		<item name="wcf.acp.uzbot.type.system_contact"><![CDATA[System - Contact]]></item>
+		<item name="wcf.acp.uzbot.type.system_conversation"><![CDATA[System - Conversations]]></item>
+		<item name="wcf.acp.uzbot.type.system_feedreader"><![CDATA[Feedreader]]></item>
+		<item name="wcf.acp.uzbot.type.system_error"><![CDATA[System - Error]]></item>
+		<item name="wcf.acp.uzbot.type.system_report"><![CDATA[System - Reportings]]></item>
+		<item name="wcf.acp.uzbot.type.system_report.description"><![CDATA[Only the notification must be configured. You can, however, choose, whether the reported user (default) or the reporting user (= acting user) is treated as “Affected User”.]]></item>
+		<item name="wcf.acp.uzbot.type.system_statistics"><![CDATA[System - Statistics]]></item>
+		<item name="wcf.acp.uzbot.type.system_update"><![CDATA[System - Updates]]></item>
+		<item name="wcf.acp.uzbot.type.user_birthday"><![CDATA[User - Birthday]]></item>
+		<item name="wcf.acp.uzbot.type.user_count"><![CDATA[User - Total Number]]></item>
+		<item name="wcf.acp.uzbot.type.user_creation"><![CDATA[User - New User]]></item>
+		<item name="wcf.acp.uzbot.type.user_groupAssignment"><![CDATA[User - Group Assignment]]></item>
+		<item name="wcf.acp.uzbot.type.user_groupChange"><![CDATA[User - Group Changes]]></item>
+		<item name="wcf.acp.uzbot.type.user_inactivity"><![CDATA[User - Inactivity]]></item>
+		<item name="wcf.acp.uzbot.type.user_likes"><![CDATA[User - Reactions]]></item>
+		<item name="wcf.acp.uzbot.type.user_membership"><![CDATA[User - Membership]]></item>
+		<item name="wcf.acp.uzbot.type.user_setting"><![CDATA[User - Settings]]></item>
+		<item name="wcf.acp.uzbot.type.user_trophy"><![CDATA[User - New Trophy]]></item>
+		<item name="wcf.acp.uzbot.type.user_ban"><![CDATA[User - Ban]]></item>
+		<item name="wcf.acp.uzbot.type.user_unban"><![CDATA[User - Unban]]></item>
+		<item name="wcf.acp.uzbot.type.user_warning"><![CDATA[User - Warning]]></item>
+		<item name="wcf.acp.uzbot.type.user_warning.description"><![CDATA[Only the notification must be configured. You can, however, choose, whether the warned user (default) or the warning user (= acting user) is treated as “Affected User”.]]></item>
+		
+		<item name="wcf.acp.uzbot.type.typeID"><![CDATA[Selection]]></item>
+		<item name="wcf.acp.uzbot.type.typeID.error.missing"><![CDATA[Please select an action.]]></item>
+		<item name="wcf.acp.uzbot.type.typeID.error.noChangeAllowed"><![CDATA[The bot may not be changed yet because notifications are still being processed.]]></item>
+		
+		<item name="wcf.acp.uzbot.user.count.error.empty"><![CDATA[You must insert at least one number.]]></item>
+		<item name="wcf.acp.uzbot.user.count.setting"><![CDATA[Trigger Values]]></item>
+		<item name="wcf.acp.uzbot.user.creation.groupID"><![CDATA[User Group]]></item>
+		<item name="wcf.acp.uzbot.user.creation.groupID.error.invalidGroup"><![CDATA[An invalid user group was selected.]]></item>
+		<item name="wcf.acp.uzbot.user.creation.setting"><![CDATA[Automatic Group Assignment]]></item>
+		
+		<item name="wcf.acp.uzbot.userLike.action"><![CDATA[Action]]></item>
+		<item name="wcf.acp.uzbot.userLike.likeTop"><![CDATA[User with the most reactions]]></item>
+		<item name="wcf.acp.uzbot.userLike.likeTotal"><![CDATA[Total number of reactions]]></item>
+		<item name="wcf.acp.uzbot.userLike.likeX"><![CDATA[Xth reaction of a user]]></item>
+		
+		<item name="wcf.acp.uzbot.userSetting"><![CDATA[Monitoring]]></item>
+		<item name="wcf.acp.uzbot.userSetting.avatarOption"><![CDATA[avatar]]></item>
+		<item name="wcf.acp.uzbot.userSetting.cover"><![CDATA[Cover Photo]]></item>
+		<item name="wcf.acp.uzbot.userSetting.email"><![CDATA[email]]></item>
+		<item name="wcf.acp.uzbot.userSetting.error.notConfigured"><![CDATA[You must select at least one item.]]></item>
+		<item name="wcf.acp.uzbot.userSetting.other"><![CDATA[other settings]]></item>
+		<item name="wcf.acp.uzbot.userSetting.selfDeletion"><![CDATA[cancellation of user account]]></item>
+		<item name="wcf.acp.uzbot.userSetting.signature"><![CDATA[signature]]></item>
+		<item name="wcf.acp.uzbot.userSetting.username"><![CDATA[username]]></item>
+		<item name="wcf.acp.uzbot.userSetting.userTitle"><![CDATA[user title]]></item>
+		
+		<item name="wcf.acp.uzbot.values"><![CDATA[Values]]></item>
+		<item name="wcf.acp.uzbot.values.description"><![CDATA[One or more numbers separated by comma.]]></item>
+		<item name="wcf.acp.uzbot.yes"><![CDATA[yes]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.0"><![CDATA[No Selection]]></item>
+		<item name="wcf.acp.uzbot.help.type.0.description"><![CDATA[<p>You always have to select a Bot action.</p>]]></item>
+		<item name="wcf.acp.uzbot.help.type.1"><![CDATA[Feedreader]]></item>
+		<item name="wcf.acp.uzbot.help.type.1.description"><![CDATA[<p>This Bot retrieves data from RSS- and Atom-feeds and sends notifications containing the these data. If required, the time of the notification can be adapted to that of the feed news; however, personal notifications are excluded.</p>
+<p>If only feed news should be retrieved, which contain certain words, use “Positive Filter”. “Negative Filter” allows for selecting news, which do not contain certain words.</p>
+<br><p>The Bot remembers which news were retrieved and prevents them from being retrieved again. To override this and to retrieve those news again, just click “RESET” below.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[feed-description]</td><td>Description of the feed</td></tr>
+<tr><td><strong>[feed-link]</td><td>URL of the feed</td></tr>
+<tr><td><strong>[feed-title]</td><td>Name of the feeds</td></tr>
+<tr><td><strong>[feeditem-categories]</strong></td><td>Categories of the feed news</td></tr>
+<tr><td><strong>[feeditem-content]</td><td>Content of the feed news</td></tr>
+<tr><td><strong>[feeditem-description]</td><td>Description of the feed news</td></tr>
+<tr><td><strong>[feeditem-link]</td><td>URL of the feed news</td></tr>
+<tr><td><strong>[feeditem-systemdate]</strong></td><td>Date of the feed news</td></tr>
+<tr><td><strong>[feeditem-systemtime]</strong></td><td>Time of the feed news</td></tr>
+<tr><td><strong>[feeditem-time]</td><td>Time of the feed news in its format</td></tr>
+<tr><td><strong>[feeditem-title]</td><td>Title of the feed news</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</td><td>Number of retrieved news (always 1)</td></tr>
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.2"><![CDATA[Updates]]></item>
+		<item name="wcf.acp.uzbot.help.type.2.description"><![CDATA[<p>This Bot checks whether updates for installed packages are available.</p>
+<p>Only the notification must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[updates]</td><td>List of package names</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</td><td>Number of found updates</td></tr>
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.3"><![CDATA[Errors]]></item>
+		<item name="wcf.acp.uzbot.help.type.3.description"><![CDATA[<p>This Bot checks whether errors occured in the WSC. It check the error log for new entries.</p>
+<p>Only the notification must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</td><td>Number of errors (0 or 1)</td></tr>
+<tr><td><strong>[errors]</strong></td><td>Found errors in short form (ID, date, message, file) since last check</td></tr>
+<tr><td><strong>[errors-full]</strong></td><td>Found errors complete and formatted</td></tr>
+<tr><td><strong>[errors-unformatted]</strong></td><td>Found errors complete and unformatted</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.4"><![CDATA[Conversations]]></item>
+		<item name="wcf.acp.uzbot.help.type.4.description"><![CDATA[<p>This Bot deletes conversations which fulfill the following conditions. Configuring Bot-specific and / or General user conditions will restrict deletion to conversations created by these users. The number of conversations per Bot run can be configured (default: 300).</p>
+<p>Optionally, you can configure notifications to get feedback about the number of deleted conversations or to inform users about the deletion of conversations.</p>
+<p>The participants of the conversations are the affected users and can be directly addressed.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of deleted conversations</td></tr>
+<tr><td><strong>[user-count]</strong></td><td>Number of deleted conversations the respective user participated in</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.5"><![CDATA[System - Reportings]]></item>
+		<item name="wcf.acp.uzbot.help.type.5.description"><![CDATA[<p>This Bot monitors the reporting of users and/or contents and sends respective notifications.</p>
+<p>By selecting the Affected User the notification can be sent to either the reporting or the reported user. Using two Bots both users can be addressed, even with different notifications.</p>
+<br><p>Notice: Since guests may report contents/users resp. contents without users as owner may be reported, it might not always be possible to translate all user-specific placeholders.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of reports (always 1)</td></tr>
+<tr><td><strong>[object-link]</strong></td><td>Link to reported content</td></tr>
+<tr><td><strong>[object-text]</strong></td><td>Text of content</td></tr>
+<tr><td><strong>[object-title]</strong></td><td>Title of content</td></tr>
+<tr><td><strong>[object-userid]</strong></td><td>ID of user who created the content</td></tr>
+<tr><td><strong>[object-userlink]</strong></td><td>Link to profile of user</td></tr>
+<tr><td><strong>[object-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[object-username]</strong></td><td>Name of user</td></tr>
+<tr><td><strong>[report-userid]</strong></td><td>ID of reporting user (or 0)</td></tr>
+<tr><td><strong>[report-userlink]</strong></td><td>Link to profile of user (or Guest)</td></tr>
+<tr><td><strong>[report-userlink2]</strong></td><td>Masked link to profile of user (or Guest)</td></tr>
+<tr><td><strong>[report-username]</strong></td><td>Name of user (or Guest)</td></tr>
+<tr><td><strong>[report-text]</strong></td><td>Text or report</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.6"><![CDATA[System - Circulars]]></item>
+		<item name="wcf.acp.uzbot.help.type.6.description"><![CDATA[<p>This Bot allows sending notification to all or selected user in form of a circular.</p>
+<p>Users can be selected by Bot-specific and General Conditions. They are considered as affected users and will individually be notified if a respective notification is selected (email, comment, conversation).</p>
+<p>When using notifications without receiver (e.g. article, thread or post) only one notification will be sent independent on the number of affected users. </p>
+<br><p>Notice: Since guests may report contents/users resp. contents without users as owner may be reported, it might not always be possible to translate all user-specific placeholders. User-specific placeholders can’t be used.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of affected users.</td></tr>
+<tr><td><strong>[counter]</strong></td><td>Freely configurable counter which is increased or decreased after each successful Bot-run.</td></tr>
+<tr><td><strong>[counter+1]</strong></td><td>A.m. counter + 1.</td></tr>
+<tr><td><strong>[counter-1]</strong></td><td>A.m. counter - 1.</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.7"><![CDATA[System - Comments]]></item>
+		<item name="wcf.acp.uzbot.help.type.7.description"><![CDATA[<p>This Bot deletes comments which fulfill the following conditions. Configuring Bot-specific and / or General user conditions will restrict deletion to comments created by these users. The number of comments per Bot run can be configured (default: 300).</p>
+<p>Optionally, you can configure a notification to get feedback about the number of deleted comments or to inform users about the deletion of comments.</p>
+<p>The authors of the comments are the affected users and can be directly addressed.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of deleted comments</td></tr>
+<tr><td><strong>[user-count]</strong></td><td>Number of deleted comments the respective user hast created or has replied to</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.8"><![CDATA[System - Statistics]]></item>
+		<item name="wcf.acp.uzbot.help.type.8.description"><![CDATA[<p>This Bot creates a daily statistics with system data like articles, users, comments.</p>
+<p>Only the notification must be configured. And there are no affected users.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[stats]</strong></td><td>Formatted statistics data</td></tr>
+<tr><td><strong>[date-from]</strong></td><td>Date of the period’s beginning</td></tr>
+<tr><td><strong>[time-from]</strong></td><td>Time of period’s beginning</td></tr>
+<tr><td><strong>[date-to]</strong></td><td>Date of the period’s end</td></tr>
+<tr><td><strong>[time-to]</strong></td><td>Time of period’s end</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>-</strong></td><td>-</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.10"><![CDATA[User - Group Assignment]]></item>
+		<item name="wcf.acp.uzbot.help.type.10.description"><![CDATA[<p>This Bot adds user to a user group or removes them from a group. The number of users per Bot run can be configured (default: 300).</p>
+<p>User an be selected by Bot-specific or general conditions. They can be, but must not, be informed about the group change by a selectable notification. The bot allows for summarizing the results in a single notification; see help below.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[usergroup]</strong></td><td>Name of the user group</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</td><td>Number of affected users</td></tr>
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.11"><![CDATA[User - New User]]></item>
+		<item name="wcf.acp.uzbot.help.type.11.description"><![CDATA[<p>This Bot monitors the registration of new user resp. the creation of users in the ACP.</p>
+<p>New users are affected users und can be assigned to a selectable user group and / or a notification about resp. for the new user can be sent. Either the group assignment or the notification (or both in parallel) must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of user including the new user</td></tr>
+<tr><td><strong>[usergroup]</strong></td><td>Name of the user group</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.12"><![CDATA[User - Total Number]]></item>
+		<item name="wcf.acp.uzbot.help.type.12.description"><![CDATA[<p>This Bot monitors the registration of new user resp. the creation of users in the ACP to send a notification if a predefined number of users is reached.</p>
+<p>You can insert one or more comma-separated values upon which the notification is sent. E.g. 100,250,500,1000.</p>
+<p>The new user is the affected user and can be directly addressed.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of users including the new user</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.13"><![CDATA[User - Birthday]]></item>
+		<item name="wcf.acp.uzbot.help.type.13.description"><![CDATA[<p>This Bot monitors the birthdays of the users and sends notifications if birthdays are found. The user’s privacy settings are respected; only users are accounted for who have made their birthday public in the profile.</p>
+<p>Depending on the settings for birthday user custom fields, no birthdays may be found. This can be overruled by selecting “Force Birthsdays”.</p>
+<p>The birthday users are the affected users and can be directly addressed.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of users having birthday</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.14"><![CDATA[User - Membership]]></item>
+		<item name="wcf.acp.uzbot.help.type.14.description"><![CDATA[<p>This Bot monitors the user’s membership period to send a notification if a predefined number of years is reached.</p>
+<p>You can insert one or more comma-separated year values upon which the notification is sent. E.g. 1,2,5,10.</p>
+<p>The anniversary users are the affected users and can be directly addressed.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of users with membership anniversary</td></tr>
+<tr><td><strong>[user-count]</strong></td><td>User’s membership period in years</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.15"><![CDATA[User - Inactivity]]></item>
+		<item name="wcf.acp.uzbot.help.type.15.description"><![CDATA[<p>This Bot monitors the inactivity of the users and can, based on various conditions, execute numerous actions and send notification in resprect to inactivities. The number of users per Bot run can be configured (default: 300).</p>
+<br><p>By combining multiple Bots complex reactions on user’s inactivities are possible. E.g. users can, in chronological order, be reminded first (even multiple times) and then be disabled, banned and at last even be deleted. In combination with the Bot “User - Group assignment” even more options are available.</p>
+<p>The inactive users are the affected users and can be directly addressed. Members of the Admin Group are automatically excluded from the actions disable, ban and delete.</p>
+<p>If disabled users are enabled by the admin or a Bot, all existing reminders are deleted. The user starts again with 0 in regard to the inactivity. The same is true for the unbanning of users.</p>
+<br><p>Notice: one notification will be created for each affected user. Except for deletion, this also applies to notifications without individual receiver, like article, threads and posts, too. If you wish only one notification, you have to activate “Condense Results”.<br>When deleting users, user-specific placeholders and additional receivers are not available and the user-releated notifications (comment, conversation, system) are not possible.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of inactive users (per Bot run)</td></tr>
+<tr><td><strong>[deleted]</strong></td><td>Information about all deleted users (ID, name, eMail)</td></tr>
+<tr><td><strong>[deleted-usernames]</strong></td><td>Names of deleted users</td></tr>
+<tr><td><strong>[user-count]</strong></td><td>Duration of inactivity of affected user in days</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.16"><![CDATA[User - Warnings]]></item>
+		<item name="wcf.acp.uzbot.help.type.16.description"><![CDATA[<p>This Bot monitors the warning of users and sends respective notifications.</p>
+<p>By selecting the Affected User the notification can be sent to either the warned user (default) or the warning user. Using two Bots both users can be addressed, even with different notifications.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of warnings (always 1)</td></tr>
+<tr><td><strong>[object-link]</strong></td><td>Link to warned content / profil</td></tr>
+<tr><td><strong>[object-text]</strong></td><td>Text of content / profile</td></tr>
+<tr><td><strong>[object-title]</strong></td><td>Title of content / profile</td></tr>
+<tr><td><strong>[object-userid]</strong></td><td>ID of user who created the warned content / profile</td></tr>
+<tr><td><strong>[object-userlink]</strong></td><td>Link to profile of user</td></tr>
+<tr><td><strong>[object-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[object-username]</strong></td><td>Name of user</td></tr>
+<tr><td><strong>[warning-expires]</strong></td><td>Expiration of warning in format “date, time” or “never”</td></tr>
+<tr><td><strong>[warning-points]</strong></td><td>Points of warning</td></tr>
+<tr><td><strong>[warning-reason]</strong></td><td>Reason for warning</td></tr>
+<tr><td><strong>[warning-title]</strong></td><td>Title of warning</td></tr>
+<tr><td><strong>[warning-userid]</strong></td><td>ID of warning user</td></tr>
+<tr><td><strong>[warning-userlink]</strong></td><td>Link to profile of user</td></tr>
+<tr><td><strong>[warning-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[warning-username]</strong></td><td>Name user</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.17"><![CDATA[User - Setting]]></item>
+		<item name="wcf.acp.uzbot.help.type.17.description"><![CDATA[<p>This Bot monitors user accounts and settings and sends notifications if the user changes something.</p>
+<p>You can select more than one monitoring item. It will, as far as possible, be explained what the user has changed; e.g. the new text of a signature.</p>
+<p>The user, who changed his settings, is the affected user and can be directly addressed.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of changes (always 1)</td></tr>
+<tr><td><strong>[user-setting]</strong></td><td>Made changes (e.g. “avatar”, “cancellation of user account”, “other settings”)</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.18"><![CDATA[User - Group Changes]]></item>
+		<item name="wcf.acp.uzbot.help.type.18.description"><![CDATA[<p>This Bot monitors user group assignments and sends notifications if the user was added to and/or removed from a group.</p>
+<p>Group changes during user bulk processing or by other plugins are not monitored.</p>
+<p>The determined users are the affected users and can be directly addressed.</p>
+<br><p>Notice: one notification will be created for each affected user. This is valid for notifications without individual receiver, like article, threads and posts, too.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of changes (always 1)</td></tr>
+<tr><td><strong>[group-add]</strong></td><td>Groups the user was added to</td></tr>
+<tr><td><strong>[group-change]</strong></td><td>Made group changes. Example: assigned to user group(s): xyz | removed from user group(s): 123</td></tr>
+<tr><td><strong>[group-remove]</strong></td><td>Groups the user was removed from</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.19"><![CDATA[User - Reactions]]></item>
+		<item name="wcf.acp.uzbot.help.type.19.description"><![CDATA[<p>This Bot monitors the distribution of reactions and sends notifications when users receive reactions.</p>
+<p>The affected user is always the user receiving the reaction.</p>
+<br><p>“Total number of reactions” will force a notification when the total number of reactions reaches one of the values in “Trigger Values”.</p>
+<p>Using “Xth reaction of a user” the notification will be sent when the affected user’s count for reactions reaches one of the values in “Trigger Values”.</p>
+<p>“User with the most reactions” will force a notification when the user with the most reactions changes. Trigger values don’t need to be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of reactions</td></tr>
+<tr><td><strong>[count-user]</strong></td><td>Number of reactions of the affected user</td></tr>
+<tr><td><strong>[reaction]</strong></td><td>Icon of reaction</td></tr>
+<tr><td><strong>[object-link]</strong></td><td>Link to the object (e.g. comment, post, image) for which the reaction was given.</td></tr>
+<tr><td><strong>[object-text]</strong></td><td>Text of the object</td></tr>
+<tr><td><strong>[object-title]</strong></td><td>Title of the object</td></tr>
+<tr><td><strong>[object-userid]</strong></td><td>ID of the owner of the object</td></tr>
+<tr><td><strong>[object-userlink]</strong></td><td>Link to the owner’s profile</td></tr>
+<tr><td><strong>[object-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[object-username]</strong></td><td>Name of the owner</td></tr>
+<tr><td><strong>[liker-id]</strong></td><td>ID of the user who gave the reaction.</td></tr>
+<tr><td><strong>[liker-link]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[liker-link2]</strong></td><td>Masked link to the user’s profile</td></tr>
+<tr><td><strong>[liker-name]</strong></td><td>Name of the user</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.20"><![CDATA[Article - Change]]></item>
+		<item name="wcf.acp.uzbot.help.type.20.description"><![CDATA[<p>This Bot monitors the update / deletion of articles (CMS) and creates a notification when a user updates or deletes an article. The monitoring may be restricted to a category as needed.</p>
+<p>The affected user is always the user who created the article.</p>
+<p>On multilingual articles, one notification will be sent for each article language.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of articles</td></tr>
+<tr><td><strong>[count-published]</strong></td><td>Total number of published articles</td></tr>
+<tr><td><strong>[count-user]</strong></td><td>Number of edited articles (always 1)</td></tr>
+<tr><td><strong>[object-action]</strong></td><td>Executed action (updated or deleted)</td></tr>
+<tr><td><strong>[object-category]</strong></td><td>Categorie of the article</td></tr>
+<tr><td><strong>[object-image-tiny]</strong></td><td>Tiny image of the article</td></tr>
+<tr><td><strong>[object-image-small]</strong></td><td>Small image of the article</td></tr>
+<tr><td><strong>[object-image-medium]</strong></td><td>Medium image of the article</td></tr>
+<tr><td><strong>[object-image-large]</strong></td><td>Large image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-tiny]</strong></td><td>Tiny teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-small]</strong></td><td>Small teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-medium]</strong></td><td>Medium teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-large]</strong></td><td>Large teaser image of the article</td></tr>
+<tr><td><strong>[object-link]</strong></td><td>Link to the article or deletion notice</td></tr>
+<tr><td><strong>[object-status]</strong></td><td>Status of the article (published / unpublished) or deletion notice</td></tr>
+<tr><td><strong>[object-teaser]</strong></td><td>Teaser of the article</td></tr>
+<tr><td><strong>[object-text]</strong></td><td>Text of the article</td></tr>
+<tr><td><strong>[object-title]</strong></td><td>Title of the article</td></tr>
+<tr><td><strong>[editor-id]</strong></td><td>ID of the editor</td></tr>
+<tr><td><strong>[editor-link]</strong></td><td>Link to the editor’s profile</td></tr>
+<tr><td><strong>[editor-link2]</strong></td><td>Masked link to the editor’s profile</td></tr>
+<tr><td><strong>[editor-name]</strong></td><td>Name of the editor</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.21"><![CDATA[Article - New Article]]></item>
+		<item name="wcf.acp.uzbot.help.type.21.description"><![CDATA[<p>This Bot monitors the creation of articles (CMS) and sends a notification when a user creates an article. The monitoring may be restricted to a category and / or published articles as needed.</p>
+<p>The affected user is always the user who created the article.</p>
+<p>On multilingual articles, one notification will be sent for each article language.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of articles</td></tr>
+<tr><td><strong>[count-published]</strong></td><td>Total number of published articles</td></tr>
+<tr><td><strong>[count-user]</strong></td><td>Number of edited articles (always 1)</td></tr>
+<tr><td><strong>[object-category]</strong></td><td>Categorie of the article</td></tr>
+<tr><td><strong>[object-image-tiny]</strong></td><td>Tiny image of the article</td></tr>
+<tr><td><strong>[object-image-small]</strong></td><td>Small image of the article</td></tr>
+<tr><td><strong>[object-image-medium]</strong></td><td>Medium image of the article</td></tr>
+<tr><td><strong>[object-image-large]</strong></td><td>Large image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-tiny]</strong></td><td>Tiny teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-small]</strong></td><td>Small teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-medium]</strong></td><td>Medium teaser image of the article</td></tr>
+<tr><td><strong>[object-teaserimage-large]</strong></td><td>Large teaser image of the article</td></tr>
+<tr><td><strong>[object-link]</strong></td><td>Link to the article or deletion notice</td></tr>
+<tr><td><strong>[object-status]</strong></td><td>Status of the article (published / unpublished) or deletion notice</td></tr>
+<tr><td><strong>[object-teaser]</strong></td><td>Teaser of the article</td></tr>
+<tr><td><strong>[object-text]</strong></td><td>Text of the article</td></tr>
+<tr><td><strong>[object-title]</strong></td><td>Title of the article</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.22"><![CDATA[User - New Trophy]]></item>
+		<item name="wcf.acp.uzbot.help.type.22.description"><![CDATA[<p>This Bot monitors the receipt of trophies by users.</p>
+<p>The affected user is always the user who received the trophy.</p>
+<p>Under “Trigger Values”, trophies can be defined by their ID to be monitored. Leave field blank to react on all trophies.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Total number of given trophies</td></tr>
+<tr><td><strong>[trophy-id]</strong></td><td>ID of the trophy</td></tr>
+<tr><td><strong>[trophy-link]</strong></td><td>Link to the trophy</td></tr>
+<tr><td><strong>[trophy-name]</strong></td><td>Name of the trophy</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+		
+		<item name="wcf.acp.uzbot.help.type.23"><![CDATA[System - Contact]]></item>
+		<item name="wcf.acp.uzbot.help.type.23.description"><![CDATA[<p>This Bot monitors the sending of the contact form by members and guests.</p>
+<p>The affected user is always the receiver selected in the contact form.</p>
+<p>Only the notification must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of sent forms (always 1)</td></tr>
+<tr><td><strong>[contact-email]</strong></td><td>Email address of the sender</td></tr>
+<tr><td><strong>[contact-guest]</strong></td><td>Guest status of sender (yes = guest, no = member)</td></tr>
+<tr><td><strong>[contact-name]</strong></td><td>Name of the sender</td></tr>
+<tr><td><strong>[contact-text]</strong></td><td>Formatted form text</td></tr>
+<tr><td><strong>[contact-username]</strong></td><td>Username of the sender (or guest)</td></tr>
+<tr><td><strong>[contact-userlink]</strong></td><td>Link to the sender (or guest)</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+	
+		<item name="wcf.acp.uzbot.help.type.24"><![CDATA[User - Ban]]></item>
+		<item name="wcf.acp.uzbot.help.type.24.description"><![CDATA[<p>This Bot monitors the banning of users and sends respective notifications.</p>
+<p>The affected user is always the user who was banned.</p>
+<p>Only the notification must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of bans</td></tr>
+<tr><td><strong>[ban-expire]</strong></td><td>End of ban period (empty or date in format YYYY-MM-DD)</td></tr>
+<tr><td><strong>[ban-reason]</strong></td><td>Reason for ban</td></tr>
+<tr><td><strong>[ban-userid]</strong></td><td>ID of user who banned</td></tr>
+<tr><td><strong>[ban-userlink]</strong></td><td>Link to profile of user</td></tr>
+<tr><td><strong>[ban-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[ban-username]</strong></td><td>Username of the user (or guest)</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+
+		<item name="wcf.acp.uzbot.help.type.26"><![CDATA[User - Unban]]></item>
+		<item name="wcf.acp.uzbot.help.type.26.description"><![CDATA[<p>This Bot monitors the unbanning of users and sends respective notifications. An automatic unbanning can not be detected in all cases.</p>
+<p>The affected user is always the user who was unbanned.</p>
+<p>Only the notification must be configured.</p>
+<br><p>The following Bot-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[count]</strong></td><td>Number of unbans</td></tr>
+<tr><td><strong>[ban-userid]</strong></td><td>ID of user who unbanned</td></tr>
+<tr><td><strong>[ban-userlink]</strong></td><td>Link to profile of user</td></tr>
+<tr><td><strong>[ban-userlink2]</strong></td><td>Masked link to profile of user</td></tr>
+<tr><td><strong>[ban-username]</strong></td><td>Username of the user (or guest)</td></tr>
+</table>
+<br><p>The following general placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[date]</strong></td><td>Date of Bot execution</td></tr>
+<tr><td><strong>[time]</strong></td><td>Time of Bot execution</td></tr>
+<tr><td><strong>[page]</strong></td><td>Name of this website, as defined in ACP</td></tr>
+<tr><td><strong>[receiver]</strong></td><td>Username of the receiver of a notification</td></tr>
+</table>
+<br><p>The following user-specific placeholders are available:</p>
+<table><col width="200px">
+<tr><td><strong>[user-age]</strong></td><td>Age of the user</td></tr>
+<tr><td><strong>[user-email]</strong></td><td>Email address of the user</td></tr>
+<tr><td><strong>[user-groups]</strong></td><td>Names of the user groups the user is member of</td></tr>
+<tr><td><strong>[user-id]</strong></td><td>ID of the user</td></tr>
+<tr><td><strong>[user-name]</strong></td><td>Name of the user</td></tr>
+<tr><td><strong>[user-profile]</strong></td><td>Link to the user’s profile</td></tr>
+<tr><td><strong>[@user-profile]</strong></td><td>Link to the user’s profile with notification (posts only)</td></tr>
+</table>]]></item>
+	</category>
+	
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.uzbotReminders"><![CDATA[Number of reminders]]></item>
+		<item name="wcf.user.condition.state.isReminded"><![CDATA[Reminded]]></item>
+		<item name="wcf.user.condition.state.isReminded.error.conflict"><![CDATA[You cannot simultaneously select “Reminded” and “Not reminded”.]]></item>
+		<item name="wcf.user.condition.state.isNotReminded"><![CDATA[Not reminded]]></item>
+	</category>
+	
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.uz.wcf.bot3"><![CDATA[System Notification]]></item>
+		<item name="wcf.user.notification.com.uz.wcf.bot3.notify"><![CDATA[New notification]]></item>
+		<item name="wcf.user.notification.uzbot.message"><![CDATA[System notification from {@$author->getAnchorTag()}: {@$message}]]></item>
+		<item name="wcf.user.notification.uzbot.title"><![CDATA[New system notification]]></item>
+	</category>
+	
+	<category name="wcf.uzbot">
+		<item name="wcf.uzbot.action.delete"><![CDATA[deleted]]></item>
+		<item name="wcf.uzbot.action.update"><![CDATA[updated]]></item>
+		<item name="wcf.uzbot.article.deleted"><![CDATA[article deleted]]></item>
+		<item name="wcf.uzbot.article.status.published"><![CDATA[published]]></item>
+		<item name="wcf.uzbot.article.status.unpublished"><![CDATA[unpublished]]></item>
+		<item name="wcf.uzbot.group.change.add"><![CDATA[assigned to user group(s): {$value}]]></item>
+		<item name="wcf.uzbot.group.change.remove"><![CDATA[removed from user group(s): {$value}]]></item>
+		<item name="wcf.uzbot.setting.user.avatar"><![CDATA[avatar changed: {if $value=='no'}no avatar{elseif $value=='yes'}own avatar{else}Gravatar{/if}]]></item>
+		<item name="wcf.uzbot.setting.user.cover"><![CDATA[cover photo: {if $value=='deleted'}deleted{elseif $value=='uploaded'}uploaded{else} {/if}]]></item>
+		<item name="wcf.uzbot.setting.user.email"><![CDATA[email address changed: {$value}]]></item>
+		<item name="wcf.uzbot.setting.user.options"><![CDATA[other user options changed]]></item>
+		<item name="wcf.uzbot.setting.user.quitEnded"><![CDATA[deletion of the user account cancelled]]></item>
+		<item name="wcf.uzbot.setting.user.quitStarted"><![CDATA[user account deleted: deadline set to {@$value|time}]]></item>
+		<item name="wcf.uzbot.setting.user.signature"><![CDATA[signature changed: {@$value}]]></item>
+		<item name="wcf.uzbot.setting.user.username"><![CDATA[username changed: {$value}]]></item>
+		<item name="wcf.uzbot.setting.user.username.old"><![CDATA[username changed: {$new} (old name: {$old})]]></item>
+		<item name="wcf.uzbot.setting.user.userTitle"><![CDATA[user title changed: {$value}]]></item>
+		<item name="wcf.uzbot.stats.wcf"><![CDATA[<strong>Members</strong>
+<br>- Total: {#$userTotalOld} -- {#$userTotal} ({if $userTotal > $userTotalOld}+{/if}{$userTotal - $userTotalOld})
+<br>- Banned: {#$userBannedOld} -- {#$userBanned} ({if $userBanned > $userBannedOld}+{/if}{$userBanned - $userBannedOld})
+<br>- Disabled: {#$userDisabledOld} -- {#$userDisabled} ({if $userDisabled > $userDisabledOld}+{/if}{$userDisabled - $userDisabledOld})
+<br>- Deletion: {#$userDeletedOld} -- {#$userDeleted} ({if $userDeleted > $userDeletedOld}+{/if}{$userDeleted - $userDeletedOld})
+<br><br><strong>Follower</strong>
+<br>- Total: {#$followerOld} -- {#$follower} ({if $follower > $followerOld}+{/if}{$follower - $followerOld})
+<br><br><strong>Article</strong>
+<br>- Total: {#$articleTotalOld} -- {#$articleTotal} ({if $articleTotal > $articleTotalOld}+{/if}{$articleTotal - $articleTotalOld})
+<br>- Unpublished: {#$articleUnpublishedOld} -- {#$articleUnpublished} ({if $articleUnpublished > $articleUnpublishedOld}+{/if}{$articleUnpublished - $articleUnpublishedOld})
+<br>- Views: {#$articleViewsOld} -- {#$articleViews} ({if $articleViews > $articleViewsOld}+{/if}{$articleViews - $articleViewsOld})
+<br>- Comments: {#$articleCommentsOld} -- {#$articleComments} ({if $articleComments > $articleCommentsOld}+{/if}{$articleComments - $articleCommentsOld})
+<br>- Reactions: {#$articleLikesOld} -- {#$articleLikes} ({if $articleLikes > $articleLikesOld}+{/if}{$articleLikes - $articleLikesOld})
+<br><br><strong>Attachments</strong>
+<br>- Total: {#$attachmentOld} -- {#$attachment} ({if $attachment > $attachmentOld}+{/if}{$attachment - $attachmentOld})
+<br>- Downloads: {#$attachmentDownloadOld} -- {#$attachmentDownload} ({if $attachmentDownload > $attachmentDownloadOld}+{/if}{$attachmentDownload - $attachmentDownloadOld})
+<br>- Memory usage: {@$attachmentSizeOld|filesize} -- {@$attachmentSize|filesize} ({if $attachmentSize > $attachmentSizeOld}+{/if}{$attachmentSize - $attachmentSizeOld})
+<br><br><strong>Comments</strong>
+<br>- Total: {#$commentOld} -- {#$comment} ({if $comment > $commentOld}+{/if}{$comment - $commentOld})
+<br>- Replies: {#$commentReplyOld} -- {#$commentReply} ({if $commentReply > $commentReplyOld}+{/if}{$commentReply - $commentReplyOld})
+<br><br><strong>Conversations</strong>
+<br>- Total: {#$conversationOld} -- {#$conversation} ({if $conversation > $conversationOld}+{/if}{$conversation - $conversationOld})
+<br>- Messages: {#$conversationMsgOld} -- {#$conversationMsg} ({if $conversationMsg > $conversationMsgOld}+{/if}{$conversationMsg - $conversationMsgOld})
+<br><br><strong>Reactions</strong>
+<br>- Reactions: {#$likesOld} -- {#$likes} ({if $likes > $likesOld}+{/if}{$likes - $likesOld})
+<br>]]></item>
+		<item name="wcf.uzbot.system"><![CDATA[System]]></item>
+		<item name="wcf.uzbot.system.never"><![CDATA[never]]></item>
+	</category>
+</language>

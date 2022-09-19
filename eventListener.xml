@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<!--  User ban -->
+		<eventlistener name="uzbotUserBanAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserBanUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="uzbotUserBanSuspendAdmin">
+			<eventclassname>wcf\system\infraction\suspension\BanSuspensionAction</eventclassname>
+			<eventname>suspend</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserBanSuspendUser">
+			<eventclassname>wcf\system\infraction\suspension\BanSuspensionAction</eventclassname>
+			<eventname>suspend</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserBanUnsuspendAdmin">
+			<eventclassname>wcf\system\infraction\suspension\BanSuspensionAction</eventclassname>
+			<eventname>unsuspend</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserBanUnsuspendUser">
+			<eventclassname>wcf\system\infraction\suspension\BanSuspensionAction</eventclassname>
+			<eventname>unsuspend</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserBanListener</listenerclassname>
+		</eventlistener>
+		
+		<!--  User creation -->
+		<eventlistener name="uzbotUserCreationAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserCreationListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserCreationUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserCreationListener</listenerclassname>
+		</eventlistener>
+		
+		<!--  Article creation -->
+		<eventlistener name="uzbotArticleActionAdmin">
+			<eventclassname>wcf\data\article\ArticleAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotArticleListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotArticleActionUser">
+			<eventclassname>wcf\data\article\ArticleAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotArticleListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Contact -->
+		<eventlistener name="uzbotContactAction">
+			<eventclassname>wcf\data\contact\option\ContactOptionAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotContactListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- trophy / user trophy creation -->
+		<eventlistener name="uzbotTrophyAction">
+			<eventclassname>wcf\data\trophy\TrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotTrophyListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserTrophyActionAdmin">
+			<eventclassname>wcf\data\user\trophy\UserTrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserTrophyListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserTrophyActionUser">
+			<eventclassname>wcf\data\user\trophy\UserTrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserTrophyListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- User Setting -->
+		<eventlistener name="uzbotUserSettingUserAction">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserSettingListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserSettingCoverAction">
+			<eventclassname>wcf\data\user\UserProfileAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserSettingListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- User group change -->
+		<eventlistener name="uzbotUserGroupChangeInitAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>initializeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserGroupChangeListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserGroupChangeAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserGroupChangeListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserGroupChangeInitUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>initializeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserGroupChangeListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="uzbotUserGroupChangeUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotUserGroupChangeListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- reaction -->
+		<eventlistener name="uzbotReationListener">
+			<environment>user</environment>
+			<eventclassname>wcf\data\reaction\ReactionAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<inherit>0</inherit>
+			<listenerclassname>wcf\system\event\listener\UzbotReactionListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Report -->
+		<eventlistener name="uzbotModerationQueueReportAction">
+			<eventclassname>wcf\data\moderation\queue\ModerationQueueReportAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotModerationQueueReportListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Warning -->
+		<eventlistener name="uzbotUserInfractionWarningAction">
+			<eventclassname>wcf\data\user\infraction\warning\UserInfractionWarningAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\UzbotInfractionListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

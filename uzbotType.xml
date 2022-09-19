@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/uzbotType.xsd">
+	<import>
+		<uzbotType name="system_feedreader">
+			<typeID>1</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>0</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>1</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_error">
+			<typeID>3</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>0</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>2</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_comment">
+			<typeID>7</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>1</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>3</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_contact">
+			<typeID>23</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>1</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>4</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_conversation">
+			<typeID>4</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule>MODULE_CONVERSATION</neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>5</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_report">
+			<typeID>5</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>1</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>6</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_circular">
+			<typeID>6</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>1</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>7</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_statistics">
+			<typeID>8</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>0</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>1</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>8</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="system_update">
+			<typeID>2</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>0</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>9</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_setting">
+			<typeID>17</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>10</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_birthday">
+			<typeID>13</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>11</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_count">
+			<typeID>12</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>1</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>12</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_groupChange">
+			<typeID>18</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>13</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_groupAssignment">
+			<typeID>10</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>14</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_inactivity">
+			<typeID>15</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>15</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_likes">
+			<typeID>19</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>1</needCount>
+			<needCountAction>likeAction</needCountAction>
+			<needCountNo>likeTop</needCountNo>
+			<neededModule>MODULE_LIKE</neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>16</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_membership">
+			<typeID>14</typeID>
+			<application>WCF</application>
+			<canCondense>1</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>1</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>17</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_creation">
+			<typeID>11</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>18</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_trophy">
+			<typeID>22</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>19</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_ban">
+			<typeID>24</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>20</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_unban">
+			<typeID>26</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>21</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="user_warning">
+			<typeID>16</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>1</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule></neededModule>
+			<needNotify>0</needNotify>
+			<sortOrder>22</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="article_change">
+			<typeID>20</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>1</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule>MODULE_ARTICLE</neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>23</sortOrder>
+		</uzbotType>
+		
+		<uzbotType name="article_new">
+			<typeID>21</typeID>
+			<application>WCF</application>
+			<canCondense>0</canCondense>
+			<hasAffected>1</hasAffected>
+			<allowGuest>0</allowGuest>
+			<canChangeAffected>0</canChangeAffected>
+			<needCount>0</needCount>
+			<needCountAction></needCountAction>
+			<needCountNo></needCountNo>
+			<neededModule>MODULE_ARTICLE</neededModule>
+			<needNotify>1</needNotify>
+			<sortOrder>24</sortOrder>
+		</uzbotType>
+		
+	</import>
+</data>
