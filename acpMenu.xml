@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/acpMenu.xsd">
-	<import>
-		<acpmenuitem name="wcf.acp.menu.link.uzbot">
-			<parent>wcf.acp.menu.link.application</parent>
-			<options>module_uzbot</options>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.category.list">
-			<controller>wcf\acp\page\UzbotCategoryListPage</controller>
-			<parent>wcf.acp.menu.link.uzbot</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.category.add">
-			<controller>wcf\acp\form\UzbotCategoryAddForm</controller>
-			<parent>wcf.acp.menu.link.uzbot.category.list</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-			<icon>fa-plus</icon>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.list">
-			<controller>wcf\acp\page\UzbotListPage</controller>
-			<parent>wcf.acp.menu.link.uzbot</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.add">
-			<controller>wcf\acp\form\UzbotAddForm</controller>
-			<parent>wcf.acp.menu.link.uzbot.list</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-			<icon>fa-plus</icon>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.log.list">
-			<controller>wcf\acp\form\UzbotLogList</controller>
-			<parent>wcf.acp.menu.link.uzbot</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-		</acpmenuitem>
-		
-		<acpmenuitem name="wcf.acp.menu.link.uzbot.import.user">
-			<controller><![CDATA[wcf\acp\form\UzbotImportUserForm]]></controller>
-			<parent>wcf.acp.menu.link.uzbot</parent>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-		</acpmenuitem>
-	</import>
+    <import>
+        <acpmenuitem name="wcf.acp.menu.link.uzbot">
+            <parent>wcf.acp.menu.link.application</parent>
+            <options>module_uzbot</options>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.category.list">
+            <controller>wcf\acp\page\UzbotCategoryListPage</controller>
+            <parent>wcf.acp.menu.link.uzbot</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.category.add">
+            <controller>wcf\acp\form\UzbotCategoryAddForm</controller>
+            <parent>wcf.acp.menu.link.uzbot.category.list</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+            <icon>fa-plus</icon>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.list">
+            <controller>wcf\acp\page\UzbotListPage</controller>
+            <parent>wcf.acp.menu.link.uzbot</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.add">
+            <controller>wcf\acp\form\UzbotAddForm</controller>
+            <parent>wcf.acp.menu.link.uzbot.list</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+            <icon>fa-plus</icon>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.log.list">
+            <controller>wcf\acp\form\UzbotLogList</controller>
+            <parent>wcf.acp.menu.link.uzbot</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+        </acpmenuitem>
+
+        <acpmenuitem name="wcf.acp.menu.link.uzbot.import.user">
+            <controller><![CDATA[wcf\acp\form\UzbotImportUserForm]]></controller>
+            <parent>wcf.acp.menu.link.uzbot</parent>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+        </acpmenuitem>
+    </import>
 </data>

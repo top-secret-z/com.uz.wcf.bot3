@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
-	<import>
-		<categories>
-			<category name="uzbot"></category>
-				<category name="uzbot.general">
-					<parent>uzbot</parent>
-					<showorder>1</showorder>
-				</category>
-					<category name="uzbot.general.data">
-						<parent>uzbot</parent>
-						<showorder>1</showorder>
-					</category>
-					<category name="uzbot.general.log">
-						<parent>uzbot</parent>
-						<showorder>2</showorder>
-					</category>
-		</categories>
-		
-		<options>
-			<option name="module_uzbot">
-				<categoryname>module.community</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="uzbot_data_limit_user">
-				<categoryname>uzbot.general.data</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>300</defaultvalue>
-				<minvalue>50</minvalue>
-				<maxvalue>5000</maxvalue>
-			</option>
-			
-			<option name="uzbot_data_limit_comment">
-				<categoryname>uzbot.general.data</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>300</defaultvalue>
-				<minvalue>50</minvalue>
-				<maxvalue>5000</maxvalue>
-			</option>
-			
-			<option name="uzbot_log_delete">
-				<categoryname>uzbot.general.log</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>30</defaultvalue>
-				<minvalue>1</minvalue>
-				<maxvalue>365</maxvalue>
-				<suffix>days</suffix>
-			</option>
-		</options>
-	</import>
+    <import>
+        <categories>
+            <category name="uzbot"></category>
+                <category name="uzbot.general">
+                    <parent>uzbot</parent>
+                    <showorder>1</showorder>
+                </category>
+                    <category name="uzbot.general.data">
+                        <parent>uzbot</parent>
+                        <showorder>1</showorder>
+                    </category>
+                    <category name="uzbot.general.log">
+                        <parent>uzbot</parent>
+                        <showorder>2</showorder>
+                    </category>
+        </categories>
+
+        <options>
+            <option name="module_uzbot">
+                <categoryname>module.community</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="uzbot_data_limit_user">
+                <categoryname>uzbot.general.data</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>300</defaultvalue>
+                <minvalue>50</minvalue>
+                <maxvalue>5000</maxvalue>
+            </option>
+
+            <option name="uzbot_data_limit_comment">
+                <categoryname>uzbot.general.data</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>300</defaultvalue>
+                <minvalue>50</minvalue>
+                <maxvalue>5000</maxvalue>
+            </option>
+
+            <option name="uzbot_log_delete">
+                <categoryname>uzbot.general.log</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>30</defaultvalue>
+                <minvalue>1</minvalue>
+                <maxvalue>365</maxvalue>
+                <suffix>days</suffix>
+            </option>
+        </options>
+    </import>
 </data>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/objectTypeDefinition.xsd">
-	<import>
-		<definition>
-			<name>com.uz.wcf.bot.condition.receiver</name>
-			<interfacename>wcf\system\condition\IUserCondition</interfacename>
-		</definition>
-		
-		<definition>
-			<name>com.uz.wcf.bot.condition.user</name>
-			<interfacename>wcf\system\condition\IUserCondition</interfacename>
-		</definition>
-		
-		<definition>
-			<name>com.uz.wcf.bot.condition.userBot</name>
-			<interfacename>wcf\system\condition\IUserCondition</interfacename>
-		</definition>
-	</import>
+    <import>
+        <definition>
+            <name>com.uz.wcf.bot.condition.receiver</name>
+            <interfacename>wcf\system\condition\IUserCondition</interfacename>
+        </definition>
+
+        <definition>
+            <name>com.uz.wcf.bot.condition.user</name>
+            <interfacename>wcf\system\condition\IUserCondition</interfacename>
+        </definition>
+
+        <definition>
+            <name>com.uz.wcf.bot.condition.userBot</name>
+            <interfacename>wcf\system\condition\IUserCondition</interfacename>
+        </definition>
+    </import>
 </data>
