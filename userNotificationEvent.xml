@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/userNotificationEvent.xsd">
-	<import>
-		<event>
-			<name>notify</name>
-			<objecttype>com.uz.wcf.bot3</objecttype>
-			<classname>wcf\system\user\notification\event\UzbotNotifyUserNotificationEvent</classname>
-			<preset>1</preset>
-			<permissions>admin.uzbot.canManageUzbot</permissions>
-			<options>module_uzbot</options>
-		</event>
-	</import>
+    <import>
+        <event>
+            <name>notify</name>
+            <objecttype>com.uz.wcf.bot3</objecttype>
+            <classname>wcf\system\user\notification\event\UzbotNotifyUserNotificationEvent</classname>
+            <preset>1</preset>
+            <permissions>admin.uzbot.canManageUzbot</permissions>
+            <options>module_uzbot</options>
+        </event>
+    </import>
 </data>

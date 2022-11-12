@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/cronjob.xsd">
-	<import>
-		<cronjob name="uzbotSystemFeedreader">
-			<classname>wcf\system\cronjob\UzbotFeedreaderCronjob</classname>
-			<description><![CDATA[Community Bot - Feedreader]]></description>
-			<description language="de"><![CDATA[Community Bot - Feedreader]]></description>
-			<startminute>*/15</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>0</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystemComment">
-			<classname>wcf\system\cronjob\UzbotCommentCronjob</classname>
-			<description><![CDATA[Community Bot - Comments]]></description>
-			<description language="de"><![CDATA[Community Bot - Kommentare]]></description>
-			<startminute>*/30</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystemConversation">
-			<classname>wcf\system\cronjob\UzbotConversationCronjob</classname>
-			<description><![CDATA[Community Bot - Conversations]]></description>
-			<description language="de"><![CDATA[Community Bot - Konversationen]]></description>
-			<startminute>*/45</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystemCircular">
-			<classname>wcf\system\cronjob\UzbotCircularCronjob</classname>
-			<description><![CDATA[Community Bot - Circulars]]></description>
-			<description language="de"><![CDATA[Community Bot - Rundschreiben]]></description>
-			<startminute>*/15</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystemErrors">
-			<classname>wcf\system\cronjob\UzbotErrorCronjob</classname>
-			<description><![CDATA[Community Bot - System Errors]]></description>
-			<description language="de"><![CDATA[Community Bot - System-Fehler]]></description>
-			<startminute>*/30</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystemUpdates">
-			<classname>wcf\system\cronjob\UzbotUpdatesCronjob</classname>
-			<description><![CDATA[Community Bot - Package Updates]]></description>
-			<description language="de"><![CDATA[Community Bot - Paket-Updates]]></description>
-			<startminute>0</startminute>
-			<starthour>1</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotUserBirthday">
-			<classname>wcf\system\cronjob\UzbotUserBirthdayCronjob</classname>
-			<description><![CDATA[Community Bot - Birthday / Membership]]></description>
-			<description language="de"><![CDATA[Community Bot - Geburtstag / Mitgliedschaft]]></description>
-			<startminute>5</startminute>
-			<starthour>4</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>0</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotUserGroupAssignment">
-			<classname>wcf\system\cronjob\UzbotUserGroupAssignmentCronjob</classname>
-			<description><![CDATA[Community Bot - User Group Assignment]]></description>
-			<description language="de"><![CDATA[Community Bot - Benutzergruppen-Zuordnung]]></description>
-			<startminute>*/15</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotUserInactivity">
-			<classname>wcf\system\cronjob\UzbotUserInactivityCronjob</classname>
-			<description><![CDATA[Community Bot - Inactivity]]></description>
-			<description language="de"><![CDATA[Community Bot - Inaktivität]]></description>
-			<startminute>*/30</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotWcfStats">
-			<classname>wcf\system\cronjob\UzbotStatsWcfCronjob</classname>
-			<description><![CDATA[Community Bot - Statistics]]></description>
-			<description language="de"><![CDATA[Community Bot - Statistik]]></description>
-			<startminute>0</startminute>
-			<starthour>5</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotCleanup">
-			<classname>wcf\system\cronjob\UzbotCleanupCronjob</classname>
-			<description><![CDATA[Community Bot - Daily Cleanup]]></description>
-			<description language="de"><![CDATA[Community Bot - Tägliches Aufräumen]]></description>
-			<startminute>0</startminute>
-			<starthour>2</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		
-		<cronjob name="uzbotSystem">
-			<classname>wcf\system\cronjob\UzbotSystemCronjob</classname>
-			<description><![CDATA[Community Bot - System]]></description>
-			<description language="de"><![CDATA[Community Bot - System]]></description>
-			<startminute>*/10</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-	</import>
+    <import>
+        <cronjob name="uzbotSystemFeedreader">
+            <classname>wcf\system\cronjob\UzbotFeedreaderCronjob</classname>
+            <description><![CDATA[Community Bot - Feedreader]]></description>
+            <description language="de"><![CDATA[Community Bot - Feedreader]]></description>
+            <startminute>*/15</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>0</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystemComment">
+            <classname>wcf\system\cronjob\UzbotCommentCronjob</classname>
+            <description><![CDATA[Community Bot - Comments]]></description>
+            <description language="de"><![CDATA[Community Bot - Kommentare]]></description>
+            <startminute>*/30</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystemConversation">
+            <classname>wcf\system\cronjob\UzbotConversationCronjob</classname>
+            <description><![CDATA[Community Bot - Conversations]]></description>
+            <description language="de"><![CDATA[Community Bot - Konversationen]]></description>
+            <startminute>*/45</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystemCircular">
+            <classname>wcf\system\cronjob\UzbotCircularCronjob</classname>
+            <description><![CDATA[Community Bot - Circulars]]></description>
+            <description language="de"><![CDATA[Community Bot - Rundschreiben]]></description>
+            <startminute>*/15</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystemErrors">
+            <classname>wcf\system\cronjob\UzbotErrorCronjob</classname>
+            <description><![CDATA[Community Bot - System Errors]]></description>
+            <description language="de"><![CDATA[Community Bot - System-Fehler]]></description>
+            <startminute>*/30</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystemUpdates">
+            <classname>wcf\system\cronjob\UzbotUpdatesCronjob</classname>
+            <description><![CDATA[Community Bot - Package Updates]]></description>
+            <description language="de"><![CDATA[Community Bot - Paket-Updates]]></description>
+            <startminute>0</startminute>
+            <starthour>1</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotUserBirthday">
+            <classname>wcf\system\cronjob\UzbotUserBirthdayCronjob</classname>
+            <description><![CDATA[Community Bot - Birthday / Membership]]></description>
+            <description language="de"><![CDATA[Community Bot - Geburtstag / Mitgliedschaft]]></description>
+            <startminute>5</startminute>
+            <starthour>4</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>0</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotUserGroupAssignment">
+            <classname>wcf\system\cronjob\UzbotUserGroupAssignmentCronjob</classname>
+            <description><![CDATA[Community Bot - User Group Assignment]]></description>
+            <description language="de"><![CDATA[Community Bot - Benutzergruppen-Zuordnung]]></description>
+            <startminute>*/15</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotUserInactivity">
+            <classname>wcf\system\cronjob\UzbotUserInactivityCronjob</classname>
+            <description><![CDATA[Community Bot - Inactivity]]></description>
+            <description language="de"><![CDATA[Community Bot - Inaktivität]]></description>
+            <startminute>*/30</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotWcfStats">
+            <classname>wcf\system\cronjob\UzbotStatsWcfCronjob</classname>
+            <description><![CDATA[Community Bot - Statistics]]></description>
+            <description language="de"><![CDATA[Community Bot - Statistik]]></description>
+            <startminute>0</startminute>
+            <starthour>5</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotCleanup">
+            <classname>wcf\system\cronjob\UzbotCleanupCronjob</classname>
+            <description><![CDATA[Community Bot - Daily Cleanup]]></description>
+            <description language="de"><![CDATA[Community Bot - Tägliches Aufräumen]]></description>
+            <startminute>0</startminute>
+            <starthour>2</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+
+        <cronjob name="uzbotSystem">
+            <classname>wcf\system\cronjob\UzbotSystemCronjob</classname>
+            <description><![CDATA[Community Bot - System]]></description>
+            <description language="de"><![CDATA[Community Bot - System]]></description>
+            <startminute>*/10</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+    </import>
 </data>

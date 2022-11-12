@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/uzbotType.xsd">
-	<import>
-		<uzbotNotify name="none">
-			<notifyID>0</notifyID>
-			<hasContent>0</hasContent>
-			<hasLabels>0</hasLabels>
-			<hasSender>0</hasSender>
-			<hasSubject>0</hasSubject>
-			<hasReceiver>0</hasReceiver>
-			<hasTags>0</hasTags>
-			<hasTeaser>0</hasTeaser>
-			<neededModule></neededModule>
-			<notifyFunction></notifyFunction>
-			<sortOrder>0</sortOrder>
-		</uzbotNotify>
-		
-		<uzbotNotify name="notification">
-			<notifyID>1</notifyID>
-			<hasContent>1</hasContent>
-			<hasLabels>0</hasLabels>
-			<hasSender>1</hasSender>
-			<hasSubject>0</hasSubject>
-			<hasReceiver>1</hasReceiver>
-			<hasTags>0</hasTags>
-			<hasTeaser>0</hasTeaser>
-			<neededModule></neededModule>
-			<notifyFunction>wcf\data\uzbot\notification\UzbotNotifyNotification</notifyFunction>
-			<sortOrder>1</sortOrder>
-		</uzbotNotify>
-		
-		<uzbotNotify name="email">
-			<notifyID>2</notifyID>
-			<hasContent>1</hasContent>
-			<hasLabels>0</hasLabels>
-			<hasSender>1</hasSender>
-			<hasSubject>1</hasSubject>
-			<hasReceiver>1</hasReceiver>
-			<hasTags>0</hasTags>
-			<hasTeaser>0</hasTeaser>
-			<neededModule></neededModule>
-			<notifyFunction>wcf\data\uzbot\notification\UzbotNotifyEmail</notifyFunction>
-			<sortOrder>2</sortOrder>
-		</uzbotNotify>
-		
-		<uzbotNotify name="article">
-			<notifyID>3</notifyID>
-			<hasContent>1</hasContent>
-			<hasLabels>1</hasLabels>
-			<hasSender>1</hasSender>
-			<hasSubject>1</hasSubject>
-			<hasReceiver>0</hasReceiver>
-			<hasTags>1</hasTags>
-			<hasTeaser>1</hasTeaser>
-			<neededModule>MODULE_ARTICLE</neededModule>
-			<notifyFunction>wcf\data\uzbot\notification\UzbotNotifyArticle</notifyFunction>
-			<sortOrder>3</sortOrder>
-		</uzbotNotify>
-		
-		<uzbotNotify name="comment">
-			<notifyID>4</notifyID>
-			<hasContent>1</hasContent>
-			<hasLabels>0</hasLabels>
-			<hasSender>1</hasSender>
-			<hasSubject>0</hasSubject>
-			<hasReceiver>1</hasReceiver>
-			<hasTags>0</hasTags>
-			<hasTeaser>0</hasTeaser>
-			<notifyFunction>wcf\data\uzbot\notification\UzbotNotifyComment</notifyFunction>
-			<neededModule>MODULE_USER_PROFILE_WALL</neededModule>
-			<sortOrder>4</sortOrder>
-		</uzbotNotify>
-		
-		<uzbotNotify name="conversation">
-			<notifyID>5</notifyID>
-			<hasContent>1</hasContent>
-			<hasLabels>0</hasLabels>
-			<hasSender>1</hasSender>
-			<hasSubject>1</hasSubject>
-			<hasReceiver>1</hasReceiver>
-			<hasTags>0</hasTags>
-			<hasTeaser>0</hasTeaser>
-			<neededModule>MODULE_CONVERSATION</neededModule>
-			<notifyFunction>wcf\data\uzbot\notification\UzbotNotifyConversation</notifyFunction>
-			<sortOrder>5</sortOrder>
-		</uzbotNotify>
-	</import>
+    <import>
+        <uzbotNotify name="none">
+            <notifyID>0</notifyID>
+            <hasContent>0</hasContent>
+            <hasLabels>0</hasLabels>
+            <hasSender>0</hasSender>
+            <hasSubject>0</hasSubject>
+            <hasReceiver>0</hasReceiver>
+            <hasTags>0</hasTags>
+            <hasTeaser>0</hasTeaser>
+            <neededModule></neededModule>
+            <notifyFunction></notifyFunction>
+            <sortOrder>0</sortOrder>
+        </uzbotNotify>
+
+        <uzbotNotify name="notification">
+            <notifyID>1</notifyID>
+            <hasContent>1</hasContent>
+            <hasLabels>0</hasLabels>
+            <hasSender>1</hasSender>
+            <hasSubject>0</hasSubject>
+            <hasReceiver>1</hasReceiver>
+            <hasTags>0</hasTags>
+            <hasTeaser>0</hasTeaser>
+            <neededModule></neededModule>
+            <notifyFunction>wcf\data\uzbot\notification\UzbotNotifyNotification</notifyFunction>
+            <sortOrder>1</sortOrder>
+        </uzbotNotify>
+
+        <uzbotNotify name="email">
+            <notifyID>2</notifyID>
+            <hasContent>1</hasContent>
+            <hasLabels>0</hasLabels>
+            <hasSender>1</hasSender>
+            <hasSubject>1</hasSubject>
+            <hasReceiver>1</hasReceiver>
+            <hasTags>0</hasTags>
+            <hasTeaser>0</hasTeaser>
+            <neededModule></neededModule>
+            <notifyFunction>wcf\data\uzbot\notification\UzbotNotifyEmail</notifyFunction>
+            <sortOrder>2</sortOrder>
+        </uzbotNotify>
+
+        <uzbotNotify name="article">
+            <notifyID>3</notifyID>
+            <hasContent>1</hasContent>
+            <hasLabels>1</hasLabels>
+            <hasSender>1</hasSender>
+            <hasSubject>1</hasSubject>
+            <hasReceiver>0</hasReceiver>
+            <hasTags>1</hasTags>
+            <hasTeaser>1</hasTeaser>
+            <neededModule>MODULE_ARTICLE</neededModule>
+            <notifyFunction>wcf\data\uzbot\notification\UzbotNotifyArticle</notifyFunction>
+            <sortOrder>3</sortOrder>
+        </uzbotNotify>
+
+        <uzbotNotify name="comment">
+            <notifyID>4</notifyID>
+            <hasContent>1</hasContent>
+            <hasLabels>0</hasLabels>
+            <hasSender>1</hasSender>
+            <hasSubject>0</hasSubject>
+            <hasReceiver>1</hasReceiver>
+            <hasTags>0</hasTags>
+            <hasTeaser>0</hasTeaser>
+            <notifyFunction>wcf\data\uzbot\notification\UzbotNotifyComment</notifyFunction>
+            <neededModule>MODULE_USER_PROFILE_WALL</neededModule>
+            <sortOrder>4</sortOrder>
+        </uzbotNotify>
+
+        <uzbotNotify name="conversation">
+            <notifyID>5</notifyID>
+            <hasContent>1</hasContent>
+            <hasLabels>0</hasLabels>
+            <hasSender>1</hasSender>
+            <hasSubject>1</hasSubject>
+            <hasReceiver>1</hasReceiver>
+            <hasTags>0</hasTags>
+            <hasTeaser>0</hasTeaser>
+            <neededModule>MODULE_CONVERSATION</neededModule>
+            <notifyFunction>wcf\data\uzbot\notification\UzbotNotifyConversation</notifyFunction>
+            <sortOrder>5</sortOrder>
+        </uzbotNotify>
+    </import>
 </data>
